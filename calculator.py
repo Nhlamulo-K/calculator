@@ -7,18 +7,20 @@ operator=input('Enter operator: ')
 def math():
     if operator== '+':
         num=num1+num2
-    if operator=='-':
+    elif operator=='-':
         num=num1-num2
-    if operator=='*':
+    elif operator=='*':
         num=num1*num2
-    if operator=='/':
+    elif operator=='/':
         if num2!=0:
             num=num1/num2
         else:
             raise ValueError('cannot divide by zero')
-    if operator=='%':
+    elif operator=='%':
         num=num1%num2
-    if operator=='sqrt':
+    elif operator=='sqrt':
         num=math.sqrt(num1)
+    else:
+        print('Invalid operator')
     print(num)
 math()
